@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookList</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1 class="display-4 text-center">
+        <i class="fa-solid fa-book-open me-2"></i>My<span class="text-primary"
+          >Book</span
+        >List
+      </h1>
+      <form id="book-form">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input
+            type="text"
+            class="form-control"
+            autocomplete="off"
+            id="title"
+          />
+        </div>
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input
+            type="text"
+            class="form-control"
+            autocomplete="off"
+            id="author"
+          />
+        </div>
+        <div class="form-group">
+          <label for="isbn">ISBN#</label>
+          <input
+            type="text"
+            class="form-control"
+            autocomplete="off"
+            id="isbn"
+          />
+        </div>
+        <input
+          type="submit"
+          class="btn btn-primary col-12 rounded-pill mt-4 text-light"
+          value="Add book"
+        />
+      </form>
+      <table class="table table-striped mt-4">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISPN</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+    </div>
+    <script src="assets/Js/all.min.js"></script>
+    <script src="assets/Js/main.js"></script>
+    <script src="assets/Js/bootstrap.bundle.js"></script>
+  </body>
+</html>
